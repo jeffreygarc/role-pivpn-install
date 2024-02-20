@@ -1,0 +1,27 @@
+---
+- name: Download PiVPN script
+  get_url:
+    url: "https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh"
+    dest: "/tmp/install.sh"
+
+- name: Add executable permission to the script
+  file:
+    path: "/tmp/install.sh"
+    mode: "u+x"
+
+- name: Write variables to options.conf
+  template:
+    src: options.j2
+    dest: /tmp/options.conf
+
+- name: Execute install.sh with flags
+  command: "/tmp/install.sh --unattended /tmp/options.conf"
+
+- name: Cleanup installer files
+  file:
+    path: "{{ item.path }}"
+    state: absent
+  loop:
+    - { path: "/tmp/install.sh" } 
+    - { path: "/tmp/options.conf" }
+  ignore_errors: true
