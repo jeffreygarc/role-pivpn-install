@@ -1,6 +1,6 @@
 # role-ansible-install
 
-An Ansible role to install Wireguard or OpenVPN with PiVPN.
+An Ansible role to install Wireguard or OpenVPN with [PiVPN](https://github.com/pivpn/pivpn).
 
 ## Variables for WireGuard
 
