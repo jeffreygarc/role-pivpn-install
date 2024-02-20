@@ -45,7 +45,7 @@ An Ansible role to install Wireguard or OpenVPN with PiVPN.
 | `pivpn_pivpnDNS1`          | Primary DNS server for the VPN.                  | No        |
 | `pivpn_pivpnDNS2`          | Secondary DNS server for the VPN.                | No        |
 | `pivpn_pivpnHOST`          | IP or domain for the VPN server.           | No        |
-| `pivpn_pivpnENCRYPT`       | Encryption strength for the VPN (e.g., 256).     | No        |
+| `pivpn_pivpnENCRYPT`       | Encryption key size (e.g., 256).     | No        |
 | `pivpn_pivpnSEARCHDOMAIN`  | Search domain for DNS resolution in the VPN.     | No        |
 | `pivpn_TWO_POINT_FOUR`     | Use version 2.4 of OpenVPN (1 for true, 0 for false).| No    |
 | `pivpn_USE_PREDEFINED_DH_PARAM`| Use predefined Diffie-Hellman parameters (1 for true, 0 for false).| No|
