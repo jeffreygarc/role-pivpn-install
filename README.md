@@ -10,7 +10,7 @@ An Ansible role to install Wireguard or OpenVPN with [PiVPN](https://github.com/
 | `pivpn_ipv6dev`            | Network interface for IPv6.                      | No        |
 | `pivpn_install_user`       | User account for installation.                   | Yes       |
 | `pivpn_vpn`                | VPN technology to use (openvpn or wireguard).    | Yes       |
-| `pivpnenableipv6`          | Enable or disable IPv6 (1 for true, 0 for false).| Yes       |
+| `pivpn_pivpnenableipv6`          | Enable or disable IPv6 (1 for true, 0 for false).| Yes       |
 | `pivpn_pivpnNET`           | Private network for the VPN.                     | No        |
 | `pivpn_subnetClass`        | Subnet class for the VPN.                        | No        |
 | `pivpn_pivpnforceipv6route`| Force IPv6 routing (1 for true, 0 for false).    | No        |
